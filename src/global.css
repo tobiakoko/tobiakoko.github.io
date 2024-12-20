@@ -1,0 +1,181 @@
+
+:root {
+    --primary-color: #acacac;
+    --secondary-color: #4d4c4c;
+    --font-primary: serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--primary-color);
+}
+
+li {
+    font-weight: 500;
+    font-size: small;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* HEADER AND NAV TING*/
+.centered_nav {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.nav {
+    display: inline-block;
+}
+
+/* ASIDE AND MAIN TING*/
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.aside_container {
+    flex-basis: 15%;
+}
+
+.aside_content {
+    list-style: none;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.main_container {
+    flex-basis: 75%;
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+    text-align: center;
+}
+
+/* CONTENT INSIDE MAIN TING*/
+
+h2 {
+    position: sticky;
+    top: 0;
+    left: 0;
+    font-weight: 500;
+    font-size: medium;
+    line-height: 1.75rem;
+}
+
+
+
+
+/* FOOTER TINGS*/
+footer {
+    border-top: 2px solid var(--primary-color);
+    font-size: small;
+    margin-top: 1.75rem;
+}
+
+.footer_container {
+    text-align: center;
+     display: flex;
+     justify-content: space-around;
+}
+
+.footer_text {
+    padding-top: 10px;
+    flex-basis: 30%;
+}
+
+.footer_text > p {
+    margin: 0;
+}
+
+.socials_icons {
+    flex-basis: 30%;
+}
+
+
+
+/* PLACEHOLDER STYLE TING*/
+
+.skeleton-wrapper {
+    max-width: 600px;
+    padding: 20px;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+
+  .skeleton {
+    background: var(--primary-color);
+    background: linear-gradient(110deg, #acacac 8%, #d0d0d0 18%, #acacac 33%);
+    border-radius: 5px;
+    background-size: 200% 100%;
+    animation: 1.5s shine linear infinite;
+  }
+
+  .skeleton-text {
+    width: 100%;
+    height: 16px;
+    margin-bottom: 12px;
+  }
+
+  .skeleton-text:last-child {
+    width: 80%;
+  }
+
+  /* Different layout examples */
+  .card {
+    padding: 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  .skeleton-title {
+    width: 50%;
+    height: 24px;
+    margin-bottom: 20px;
+  }
+
+  .skeleton-image {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 16px;
+  }
+
+  .list-item {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .skeleton-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .skeleton-content {
+    flex: 1;
+  }
+
+  @keyframes shine {
+    to {
+      background-position-x: -200%;
+    }
+  }
